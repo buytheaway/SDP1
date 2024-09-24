@@ -1,9 +1,7 @@
-// Interface for Products
 interface Product {
     double getDiscount();
 }
 
-// FoodProduct class implementing Product interface
 class FoodProduct implements Product {
     public double price;
 
@@ -13,11 +11,11 @@ class FoodProduct implements Product {
 
     @Override
     public double getDiscount() {
-        return price * 0.1;  // 10% discount for food products
+        return price * 0.1;  
     }
 }
 
-// ElectronicProduct class implementing Product interface
+
 class ElectronicsProduct implements Product {
     public double price;
 
@@ -31,10 +29,10 @@ class ElectronicsProduct implements Product {
     }
 }
 
-// DiscountCalculator class
+
 class DiscountCalculator {
     public double calculateDiscount(Product product) {
-        return product.getDiscount();  // Polymorphism used here
+        return product.getDiscount();  // Polymorphism
     }
 }
 
